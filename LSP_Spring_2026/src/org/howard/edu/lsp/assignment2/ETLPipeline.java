@@ -6,6 +6,12 @@ import java.math.RoundingMode;
 import java.nio.file.*;
 
 public class ETLPipeline {
+	
+
+	/**
+	 * Name: Deontae Smith
+	 * @param args
+	 */
     
     private static final String INPUT_FILE = "data/products.csv";
     private static final String OUTPUT_FILE = "data/transformed_products.csv";
@@ -18,10 +24,10 @@ public class ETLPipeline {
         
         File inputFile = new File(INPUT_FILE);
        
-//        if (!inputFile.exists()) {
-//            System.err.println("Input file error");
-//            System.exit(1);
-//        }
+        if (!inputFile.exists()) {
+            System.err.println("Input file error, please check file");
+            System.exit(1);
+        }
         
  
         try {
